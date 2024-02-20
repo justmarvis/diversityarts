@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0px;   
+}
+
+
+/* General */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    font-style: normal;
+    text-transform: capitalize;
+    border: 1px dotted grey;
+}   
+.head {
+    display: flex;
+    width: 90%;
+    border: grey 1px dotted;
+    padding: 10px;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin: 0 auto;
+}
+.bottom {
+    margin: 0 auto;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    width: 80%;
+}
+.headers {
+    font-size: 64px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.navigation {
+    width: 180px;
+    height: 35px;
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: grey 2px solid;
+    /* padding: 5px 30px; */
+    border-radius: 10px;
+}
+.navigation a {
+    color: rgba(255, 199, 0, 0.8);
+    text-decoration: none;
+}
+.navigation a:not(:last-child) {
+    margin-right: 30px;
+}
+.navigation a:hover, .navigation .active {
+    color: rgba(255, 199, 0, 1);
+    cursor: pointer;
+    border-bottom: 4px solid rgba(255, 199, 0, 1);
+}
+.navigation a:active {
+    color: rgba(255, 199, 0, 0.8);
+    border-bottom: 4px solid rgba(255, 199, 0, 0.8);
+}
+.searchContainer {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    justify-content: end;
+    align-items: end;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+    /* margin-right: 50px; */
+}
+.proxy {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    justify-content: end;
+    align-items: end;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.search {
+    font-size: 20px;
+    color: #000;
+}
+.fa-copyright {
+    font-size: 12px;
+    font-weight: 100;
+}
+.copyright {
+    border: 1px solid grey;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+
+/* About */
+
+.DA {
+    border: 1px dotted grey;
+    width: 40%;
+    margin-left: 85px;
+    font-size: 22px;
+    font-weight: 400;
+}
+.abt_heading {
+    font-size: 32px;
+    font-weight: 900;
+}
+.abt_board, .abt_contributors, .abt_testimonials {
+    border: 1px dotted grey;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
