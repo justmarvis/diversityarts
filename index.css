@@ -16,17 +16,25 @@ body {
     font-variation-settings:"slnt" 0;
     font-style: normal;
     text-transform: capitalize;
-    border: 1px dotted grey;
 }   
 .head {
     display: flex;
-    width: 90%;
-    border: grey 1px dotted;
-    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
     justify-content: space-between;
-    margin-top: 15px;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    /* margin-top: 15px; */
     margin: 0 auto;
 }
+.logo {
+    width: 150px;
+}
+/* .hd {
+    display: flex;
+    justify-content: center;
+} */
 .bottom {
     margin: 0 auto;
     margin-top: 200px;
@@ -34,26 +42,41 @@ body {
     width: 80%;
 }
 .headers {
-    font-size: 64px;
+    font-size: 40px;
     font-style: italic;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+}
+.Logo {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.filter {
+    margin-right: 50px;
+    margin-top: 20px;
 }
 .navigation {
-    width: 180px;
-    height: 35px;
+    position: fixed;
+    width: 100%;
+    /* margin-top: -70px; */
     font-weight: 600;
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    border: grey 2px solid;
-    /* padding: 5px 30px; */
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.nav {
+    background-color: rgba(0, 0, 0, 1);
+    padding: 8px 30px;
     border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(225, 225, 225, 0.8);
 }
 .navigation a {
     color: rgba(255, 199, 0, 0.8);
     text-decoration: none;
+    font-size: 14px;
 }
 .navigation a:not(:last-child) {
     margin-right: 30px;
@@ -61,15 +84,15 @@ body {
 .navigation a:hover, .navigation .active {
     color: rgba(255, 199, 0, 1);
     cursor: pointer;
-    border-bottom: 4px solid rgba(255, 199, 0, 1);
+    border-bottom: 3.5px solid rgba(255, 199, 0, 1);
 }
 .navigation a:active {
     color: rgba(255, 199, 0, 0.8);
-    border-bottom: 4px solid rgba(255, 199, 0, 0.8);
+    border-bottom: 3.5px solid rgba(255, 199, 0, 0.8);
 }
 .searchContainer {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     background-color: #fff;
     justify-content: end;
     align-items: end;
@@ -77,7 +100,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     cursor: pointer;
     /* margin-right: 50px; */
 }
@@ -95,7 +118,7 @@ body {
     cursor: pointer;
 }
 .search {
-    font-size: 20px;
+    font-size: 16px;
     color: #000;
 }
 .fa-copyright {
@@ -103,31 +126,174 @@ body {
     font-weight: 100;
 }
 .copyright {
-    border: 1px solid grey;
     font-size: 14px;
     font-weight: 200;
 }
+.Tag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tagImage0, .tagImage1, .tagImage2 {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #808080;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.tagImage0, .tagImage1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tagImage2 {
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/422283623_2736532609836213_4919223279810165534_n.jpg?v=1706919031899');
+    background-position: center;
+    background-size: cover;
+}
+.fa-user {
+    font-size: 50px;
+}
+.nameTag {
+    box-shadow: 0px 0px 3.5px rgba(225, 225, 225, 0.8);
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+.banner {
+    max-height: 500px;
+    /* overflow: hidden; */
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 200px;
+}
+.shadow {
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    filter: blur(8px);
+    margin-top: -50px;
+}
+.slideshow-container {
+    max-width: 100%; /* Adjusted to make it responsive */
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
 
+.slideshow-container img {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    background-position: center;
+    background-size: cover;
+}
+
+.indicator {
+    position: absolute; /* Change to fixed to position relative to the viewport */
+    top: 88%; /* Place it at the vertical center */
+    left: 50%; /* Place it at the horizontal center */
+    transform: translate(-50%, -50%); /* Center it precisely */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    padding: 5px 20px;
+}
+
+
+.indicator span {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 5px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid #D9D9D9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.indicator span.active {
+    background-color: #D9D9D9;
+    border: none;
+    height: 11.5px;
+    width: 11.5px;
+}
+.down {
+    position: absolute; /* Change to fixed to position relative to the viewport */
+    top: 95%; /* Place it at the vertical center */
+    left: 50%; /* Place it at the horizontal center */
+    transform: translate(-50%, -50%); /* Center it precisely */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    background-color:rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    font-size: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 1);
+}
+.aWeek {
+    width: 80%;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.aWeek li {
+    font-size: 16px;
+}
+.aWeek .days {
+    margin-right: 50px;
+}
+.left {
+    display: flex;
+}
+.right {
+    width: 300px;
+}
 
 /* About */
 
-.DA {
-    border: 1px dotted grey;
-    width: 40%;
-    margin-left: 85px;
-    font-size: 20px;
-    font-weight: 400;
+.aboutLogo {
+    width: 100px;
+    /* height: 200px; */
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
-.DAtext {
-    font-size:
+.AL {
+    width: 100px;
+}
+.DA {
+    width: 80%;
+    margin-left: 55px;
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 100px;
 }
 .abt_heading {
     font-size: 32px;
     font-weight: 900;
 }
-.abt_board, .abt_contributors, .abt_testimonials {
-    border: 1px dotted grey;
+.abt_heading, .abt_board {
     width: 80%;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 20px;
+}
+.abt_board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
 }
