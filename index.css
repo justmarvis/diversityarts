@@ -238,6 +238,7 @@ body {
     position: relative;
     margin: auto;
     overflow: hidden;
+    height: 600px;
 }
 
 .slideshow-container img {
