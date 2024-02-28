@@ -77,8 +77,23 @@ body {
 }
 .date {
     text-align: left;
-    color: #fff;
-    text-shadow: 0px 0px 5px #000;
+    color: #000;
+    font-weight: 700;
+    background-color: #fff;
+    padding: 5px;
+    animation: date 3.5s ease-in;
+    width: 100%;
+}
+@keyframes date {
+    0% {
+        width: 50%;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 100%;
+    }
 }
 .txt {
     color: #fff;
