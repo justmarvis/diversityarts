@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     z-index: 10;
     color: #fff;
@@ -42,6 +42,10 @@ body {
 .about, .sellables {
     margin-left: 50px;
 }
+.about.active {
+    color:#ffa500;
+
+}
 .facebook {
     margin-right: 50px;
 }
@@ -57,7 +61,7 @@ body {
 }
 .banner {
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/28D0265F-C40B-453D-AFC6-3AE8920452A7%20(1).jpg?v=1709099711822');
     background-position: center;
     background-size: cover;
@@ -72,9 +76,9 @@ body {
     margin-top: 50px;
     /* width: 50%; */
 }
-.text {
+/* .text {
     margin-bottom: 50px;
-}
+} */
 .date {
     text-align: left;
     color: #000;
@@ -83,6 +87,7 @@ body {
     padding: 5px;
     animation: date 3.5s ease-in;
     width: 100%;
+    margin-bottom: 50px;
 }
 @keyframes date {
     0% {
@@ -104,7 +109,7 @@ body {
 }
 .btn {
     padding: 10px 30px;
-    background-color: #fff;
+    background-color: #000;
     border: none;
     border-radius: 20px;
     font-size: 14px;
@@ -112,6 +117,7 @@ body {
     font-weight: 800;
     cursor: pointer;
     transition: .1s;
+    color: #fff;
 }
 .btn:hover {
     color: #ffa500;
@@ -137,7 +143,7 @@ body {
 }
 .cardImage1 {
     width: 100%;
-    height: 200px;
+    height: 400px;
     background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/F5AB8F48-BBFA-40E4-A6B8-5BB94A1EADD8.JPG?v=1709091670561');
     background-size: cover;
     background-position: center;
@@ -145,7 +151,7 @@ body {
 }
 .cardImage2 {
     width: 100%;
-    height: 200px;
+    height: 400px;
     background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/429608018_1117938806072685_2354119637070037185_n.jpg?v=1709113611631');
     background-size: cover;
     background-position: center;
@@ -156,7 +162,8 @@ body {
 }
 .change {
     display: flex;
-    padding: 30px;
+    padding: 50px;
+    justify-content: space-between;
 }
 .left {
     width: 50%;
@@ -202,25 +209,30 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
+}
+.floorLogo {
+    width: 20%;
+    position: absolute;
+    left: 70%;
+    margin-top: 50px;
 }
 .contact {
-    margin-left: 100px;
-    width: 50%;
+    width: 100%;
 }
-.extra {
-    margin-right: 100px;
-    width: 50%;
-    text-align: center;
+.cntct {
     display: flex;
+    width: 100%;
     justify-content: space-evenly;
 }
+.com {
+    width: 50%;
+}
 .contactHead {
+    width: 80%;
     font-size: 50px;
     font-weight: 600;
     text-transform: uppercase;
+    margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 40px;
 }
@@ -245,6 +257,10 @@ body {
     width: 80%;
     font-family: "Inter" sans-serif;
 }
+.comButton {
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
 .fHead {
     margin-bottom: 10px;
     font-weight: 800;
@@ -261,4 +277,163 @@ body {
     font-size: 12px;
     font-weight: 300;
     
+}
+
+/* About Page */
+
+.abt {
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    background-color: rgba(255, 165, 0, 1);
+    padding: 50px;
+    align-items: center;
+    font-weight: 400;
+    margin-bottom: 50px;
+    margin-top: 80px;
+    color: #000;
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/cn-tower.jpg?v=1709177016889');
+    background-position: center;
+    background-size: cover;
+}
+.abtContain {
+    width: 50%;
+    padding: 20px;
+}
+.videoContainer {
+    width: 40%;
+    height: 400px;
+    background-color: grey;
+    transform: scale(0.8);
+}
+.board {
+    font-size: 14px;
+    padding: 20px;
+    margin-bottom: 50px;
+    /* padding-right: 200px; */
+}
+.abt_txt {
+    border-top: 2px solid rgb(255, 255, 255);
+    padding-top: 10px;
+}
+.p {
+    font-size: 16px;
+}
+.abt_head {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.head_text {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.siteName, .boardName {
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+.tagContain {
+    display: flex;
+    width: 80%;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    cursor: pointer;
+}
+.nameTag {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+.title {
+    text-transform: uppercase;
+}
+.tagPhoto {
+    width: 100px;
+    height: 100px;
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/422283623_2736532609836213_4919223279810165534_n.jpg?v=1706919031899');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.abt_button {
+    display: flex;
+    justify-content: center;
+}
+.abt_btn {
+    padding: 10px 30px;
+    background-color: #000;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .1s;
+    color: #fff;
+    text-align: center;
+}
+.abt_btn:hover {
+    color: #ffa500;
+}
+.abt_btn:active {
+    transform: scale(0.8);
+}
+.boardName {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.diverseArt {
+    width: 80%;
+    margin: 0 auto;
+}
+.DA {
+    width: 100%;
+}
+.cntct {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+.sendButton {
+    width: 50%;
+    align-self: flex-end;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.sendBtn {
+    padding: 10px 30px;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .1s;
+    color: #000;
+    text-align: center;
+}
+.sendBtn:hover {
+    color: #ffa500;
+}
+.sendBtn:active {
+    transform: scale(0.8);
 }
