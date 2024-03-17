@@ -11,13 +11,13 @@
 body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
+    background-color: whitesmoke;
 }
 .top {
     background: #141414;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: fixed; */
     width: 100%;
     z-index: 10;
     color: #fff;
@@ -66,6 +66,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* padding: 10px; */
 }
 .introduction {
     text-align: center;
@@ -74,14 +75,14 @@ body {
 }
 .HEAD {
     color: #fff;
-    font-size: 50px;
-    width: 50%;
+    font-size: 25px;
+    width: 20%;
     margin: 0 auto;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
     font-family: "Madimi One", sans-serif;
     text-transform: uppercase;
     line-height: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .LEARN {
     color: #fff;
@@ -99,7 +100,7 @@ body {
     background-color: rgb(255, 0, 0);
     border: none;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     font-weight: 800;
     cursor: pointer;
@@ -249,15 +250,17 @@ body {
     display: flex;
     padding: 50px;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 .left {
     width: 50%;
     text-align: center;
     padding: 50px;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: #fff;
 }
 .learn {
     width: 80%;
+    font-weight: bold;
     margin: 0 auto;
 }
 .learnHead {
@@ -274,6 +277,7 @@ body {
     font-size: 18px;
     font-weight: 300;
     color: #ffa500;
+    text-decoration: none;
 }
 .learnLink:hover {
     color: #000;
@@ -326,6 +330,7 @@ body {
     display: flex;
     align-items: end;
     margin-bottom: 20px;
+    font-size: 14px;
 }
 .input label {
     margin-right: 10px;
@@ -334,12 +339,13 @@ body {
     padding: 10px;
     outline: none;
     width: 50%;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: #fff;
     color: #000;
     border: none;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 300;
+    border: 1px solid #000;
     /* margin-bottom: 20px; */
 }
 #comment {
@@ -379,7 +385,7 @@ body {
     font-weight: 400;
     margin: 0 auto;
     color: #000;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     margin-bottom: 100px;
 }
 .abtContain {
@@ -433,7 +439,7 @@ body {
 }
 .tagContain {
     display: flex;
-    padding: 50px 200px;
+    /* padding: 50px 200px; */
     align-items: center;
     justify-content: space-evenly;
     margin: 0 auto;
@@ -447,8 +453,9 @@ body {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
     /* padding: 20px; */
     cursor: pointer;
-    margin-bottom: 50px;
+    /* margin-bottom: 10px; */
     margin-right: 20px;
+    margin-top: 50px;
 }
 .nameTag {
     padding: 10px;
@@ -458,10 +465,24 @@ body {
 .title {
     text-transform: uppercase;
 }
-.tagPhoto {
+.tagPhoto0 {
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/unnamed.jpg?v=1710678285820');
+    width: 100px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+.tagPhoto1 {
     width: 100px;
     height: 200px;
     background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/422283623_2736532609836213_4919223279810165534_n.jpg?v=1706919031899');
+    background-position: center;
+    background-size: cover;
+}
+.tagPhoto2 {
+    width: 100px;
+    height: 200px;
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/unnamed%20(1).jpg?v=1710678576674');
     background-position: center;
     background-size: cover;
 }
@@ -474,7 +495,6 @@ body {
     background-color: #000;
     border: none;
     border-radius: 20px;
-    font-size: 14px;
     text-transform: uppercase;
     font-weight: 800;
     cursor: pointer;
@@ -509,7 +529,7 @@ body {
     width: 50%;
     align-self: flex-end;
     text-align: left;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 .sendBtn {
     padding: 10px 30px;
