@@ -97,6 +97,11 @@ body {
 }
 .lowerHead {
     font-size: 20px;
+    margin-bottom: 10px;;
+}
+.evntDsc {
+    font-size: 13px;
+    margin-top: 10px;
 }
 .introduction {
     text-align: center;
@@ -293,8 +298,23 @@ body {
     margin: 0 auto;
 }
 .paintParty {
-    padding: 20px;
+    padding: 50px;
     background-color: rgba(255, 165, 0, 0.2);
+}
+.eventImage {
+    width: 200px;
+    height: 100px;
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/IMG-20240318-WA0002.jpg?v=1710812412888');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play {
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
 }
 .learnHead {
     font-family: "M PLUS Code Latin", monospace;
@@ -422,11 +442,11 @@ body {
     margin-bottom: 100px;
 }
 .abtContain {
-    width: 50%;
+    /* width: 50%; */
     margin-right: 50px;
     /* padding: 20px; */
 }
-.abtIMG {
+.abtpIMG {
     width: 50%;
     height: 900px;
     background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/58917d8c-2e69-4526-b334-cb9e8c696a4a.JPG?v=1708756494399');
@@ -450,7 +470,7 @@ body {
     padding-top: 10px;
 }
 .p {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
 }
 .abt_head {
@@ -667,5 +687,15 @@ body {
     .ff {
         margin-right: 20px;
         font-weight: 500;
+    }
+    .siteName {
+        font-size: 30px;
+    }
+    .abt {
+        padding: 20px;
+        /* width: 90%; */
+    }
+    .abtIMG {
+        display: none;
     }
 }
