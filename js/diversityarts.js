@@ -1,19 +1,15 @@
-var slideIndex = 0;
-  showSlides();
+// Function to toggle the popup window
+function togglePopup() {
+  var popup = document.getElementById("popup-1");
+  // Toggle the 'active' class to show/hide the popup
+  popup.classList.toggle("active");
+}
 
-  function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-  }
+// Function to close the popup window
+function closePopup() {
+  var popup = document.getElementById("popup-1");
+  // Hide the popup by setting its display to 'none'
+  popup.style.display = "none";
+}
+
+//animations
