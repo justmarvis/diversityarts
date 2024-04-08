@@ -439,7 +439,7 @@ body {
     margin: 0 auto;
     color: #000;
     /* margin-top: 100px; */
-    margin-bottom: 100px;
+    /* margin-bottom: 50px; */
 }
 .abtContain {
     /* width: 50%; */
@@ -461,7 +461,7 @@ body {
 }
 .board {
     font-size: 14px;
-    padding: 20px;
+    padding:  5px 20px;
     margin-bottom: 50px;
     /* padding-right: 200px; */
 }
@@ -494,14 +494,18 @@ body {
     display: flex;
     /* padding: 50px 200px; */
     align-items: center;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     margin: 0 auto;
     flex-wrap: wrap;
+    margin-right: 50px;
+    width: 90%;
+    margin: 0 auto;
 }
 .tag {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     /* flex-direction: column; */
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
     /* padding: 20px; */
@@ -510,13 +514,14 @@ body {
     margin-right: 20px;
     margin-top: 50px;
 }
-.nameTag {
+.tagDetails {
     padding: 10px;
     border-radius: 10px;
     text-transform: uppercase;
+    /* margin-bottom: 10px; */
 }
-.title {
-    text-transform: uppercase;
+.nameTag {
+    margin-bottom: 5px;
 }
 .tagPhoto0 {
     background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/unnamed.jpg?v=1710678285820');
@@ -564,11 +569,10 @@ body {
 .boardName {
     text-align: center;
     font-size: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 .diverseArt {
-    padding: 50px   ;
-    margin-bottom: 100px;
+    padding: 50px;
 }
 .DA {
     width: 100%;
@@ -693,6 +697,7 @@ body {
     }
     .abt {
         padding: 20px;
+        margin-bottom: 30px;
         /* width: 90%; */
     }
     .abtIMG {
