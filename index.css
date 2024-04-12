@@ -589,14 +589,14 @@ body {
     display: flex;
     margin-top: 50px;
     margin-bottom: 20px;
+    align-items: start;
 }
 .artDisplay {
-    width: 50%;
-    height: 100px;
+    width: 250px;
+    height: 300px;
     background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/unsee.jpg?v=1712621557975');
     background-position: center;
     background-size: cover;
-    margin-left: 50px;
 }
 .tagContain {
     display: flex;
