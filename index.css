@@ -36,10 +36,26 @@ body {
 .socialLinks {
     /* width: 40%; */
     display: flex;
-    justify-content: end;
+    justify-content: start;
     align-items: center;
     text-align: left;
-    margin-right: 50px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+.facebook, .insta {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f5f5f5;
+    background-color: #2C2C2C;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.fa, .in {
+    font-size: 24px;
 }
 .socials {
     display: none;
@@ -57,19 +73,6 @@ body {
 }
 .mainLinks a:hover, .socialLinks a:hover {
     color: #ffa500;
-}
-.facebook {
-    margin-right: 20px;
-    color: rgb(45, 45, 155);
-    font-size: 30px;
-    margin-right: 30px;
-    color: #f5f5f5;
-}
-.insta {
-    color: rgb(45, 45, 155);
-    font-size: 30px;
-    margin-right: 20px;
-    color: #f5f5f5;
 }
 .icon {
     font-size: 18px;
@@ -785,9 +788,6 @@ body {
 }
 
 @media only screen and (max-width: 60rem) {
-    .socialLinks{
-        display: none;
-    }
     /* .pages {
         display: none;
     } */
