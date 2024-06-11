@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 * {
     margin: 0;
@@ -12,7 +13,7 @@
 body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
 }
 .top {
     background-color: #2C2C2C;
@@ -39,12 +40,28 @@ body {
     justify-content: start;
     align-items: center;
     text-align: left;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-bottom: 10px;
 }
+.eventCall {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin-bottom: 10px;
+}
+.callLeft {
+    width: 50px;
+    height: 50px;
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/Stack%20Colour.png?v=1709335313198');
+    background-position: center;
+    background-size: cover;
+}
 .facebook, .insta {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,9 +88,6 @@ body {
 .ff {
     margin-right: 50px;
 }
-.mainLinks a:hover, .socialLinks a:hover {
-    color: #ffa500;
-}
 .icon {
     font-size: 18px;
     margin-left: 10px;
@@ -85,25 +99,51 @@ body {
     padding-bottom: 10px;
     /* margin-left: 50px; */
 }
-.Logo {
+/* .Logo {
     margin-right: 50px;
     margin-left: 50px;
-}
+} */
 .menu {
     font-size: 32px;
     margin-right: 30px;
 }
 .banner {
+    position: relative; /* Make the container a positioned element */
     width: 100%;
     height: 50vh;
     background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/Designer%20(10).jpg?v=1710806930554');
     background-position: center;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black color with 50% opacity */
+    z-index: 1; /* Ensure the overlay is above the background image but below any content */
+}
+
+/* To ensure content inside the banner is above the overlay */
+.banner > * {
+    position: relative;
+    z-index: 2;
+}
+
+.mission {
+    width: 90%;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
 .subHead {
     margin-bottom: 50px;
 }
@@ -121,12 +161,21 @@ body {
     text-align: center;
 }
 .catch {
-    font-family: "Inspiration", cursive;
+    font-family: "Fjalla One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 48px;
-    text-align: center;
-    margin-bottom: 30px;
+    font-size: 32px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+.byline {
+    font-family: "Inter" sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .evntDsc {
     font-size: 13px;
@@ -149,18 +198,17 @@ body {
     line-height: 2rem;
     margin-bottom: 30px;
 }
-.LEARN {
+.learnBtn {
+    font-family: "Fjalla One", sans-serif;
     color: #fff;
-    font-size: 20px;
-    width: 50%;
-    margin: 0 auto;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    font-size: 14px;
+    background-color: transparent;
+    font-weight: 100;
+    border: 3px solid rgb(0, 0, 0);
+    color: #000;
+    padding: 10px 10px;
+    margin-left: 20px;
     margin-bottom: 50px;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-weight: 300;
-    border: 3px solid rgba(240, 170, 21, 0.3);
-    border-radius: 10px;
 }
 
 .BN {
@@ -348,19 +396,19 @@ body {
     padding: 50px;
     background-color: #fff;
 }
-.learn {
-    width: 80%;
-    font-weight: bold;
-    margin: 0 auto;
-}
 .paintParty {
     padding: 50px;
     background-color: #949494;
     margin-bottom: 50px;
 }
+.scrollEvent {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
 .eventImage {
-    width: 200px;
-    height: 100px;
+    width: 100%;
+    height: 300px;
     background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/IMG-20240318-WA0002.jpg?v=1710812412888');
     background-size: cover;
     background-position: center;
@@ -372,7 +420,7 @@ body {
 .play {
     position: absolute;
     color: #fff;
-    font-size: 30px;
+    font-size: 50px;
 }
 .popup .content {
     position: fixed;
@@ -455,14 +503,13 @@ body {
     font-size: 18px;
     font-weight: 300;
 }
-.learnLink {
-    font-size: 18px;
-    font-weight: 300;
-    color: #ffa500;
-    text-decoration: none;
+.learnBtnLink {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
 }
 .learnLink:hover {
-    color: #000;
     cursor: pointer;
 }
 .right {
@@ -793,22 +840,30 @@ body {
     /* .pages {
         display: none;
     } */
+    .banner {
+        height: 30vh;
+        margin-bottom: 20px;
+    }
     .HEAD {
         display: none;
     }
     .Logo {
-        margin-left: 25px;
-        margin-right: 25px;
+        margin-left: 20px;
+    }
+    .e {
+        margin-right: 20px;
+        border: 2px solid #f5f5f5;
+        padding: 10px 20px;
+    }
+    .eLink {
+        color: #f5f5f5;
+        font-size: 16px;
     }
     .logo {
         width: 150px;
     }
     .mainlinks {
         width: 100%;
-    }
-    .LEARN {
-        font-size: 14px;
-        width: 80%;
     }
     .art {
         padding: 25px;
@@ -906,20 +961,45 @@ body {
         margin-left: 5px;
     }
     .event {
-        padding: 25px;
+        /* padding: 25px; */
         position: relative;
         width: 350px;
         overflow: hidden;
         margin: 0 auto;
         margin-bottom: 10px;
     }
-    
+    .flyer {
+        width: 80%;
+        height: 450px;
+        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/WhatsApp%20Image%202024-06-10%20at%2022.02.16_a899fd8d.jpg?v=1718138444264');
+        background-position: center;
+        background-size:contain;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
     .slide {
         position: relative;
         width: 100%;
         height: 250px;
     }
-    
+    .caption {
+        position: absolute;
+        font-family: "Inter", sans-serif;
+        background-color: #fff;
+        font-family: "inter";
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    .one {
+        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/WhatsApp%20Image%202024-06-06%20at%2021.20.21_1b9fed97.jpg?v=1717799197907');
+        background-position: center;
+        background-size: contain;
+    }
+    .two {
+        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/WhatsApp%20Image%202024-06-06%20at%2021.20.20_0da42030.jpg?v=1717799202357');
+        background-position: center;
+        background-size: contain;  
+    }
     .one, .two {
         position: absolute;
         top: 0;
