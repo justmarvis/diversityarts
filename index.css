@@ -1044,6 +1044,10 @@ body {
         padding: 20px;
         font-size: 14px;
     }
+    .art {
+        padding: 20px;
+        font-size: 14px;
+    }
     .tickets {
         display: flex;
         justify-content: center;
