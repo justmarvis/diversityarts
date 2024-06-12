@@ -24,9 +24,9 @@
         <br>
         <div class="catch">Join us, show your talent !</div><br>
 
-        <div class="flyer"></div>
+        <a href="https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/WhatsApp%20Image%202024-06-12%20at%2011.35.52_4194a718.jpg?v=1718213033554" target="_blank"><div class="flyer"></div></a>
 
-        <div class="event">
+        <!-- <div class="event">
             <div class="slide">
                 <div class="one"><div class="caption">This is working</div></div>
                 <div class="two"><div class="caption">This is working</div></div>
@@ -36,13 +36,52 @@
                 <p class="detail"><i class="fa-solid fa-calendar-days"></i> dates: June 22 and July 13</p><br>
                 <p class="detail"><i class="fa-solid fa-location-crosshairs"></i> location: Corner Banks Bar</p>
             </div>
-        </div>
+        </div> -->
 
         <div class="tickets">
-            <button class="ticket">Get Tickets</button>
+            <button class="ticket"><a href="https://buy.stripe.com/eVa8zT4rld0pa4w8ww" target="_blank" class="eLink">Get Tickets</a></button>
+        </div>
+
+        <div class="details">
+            <br>
+            <p class="byline">Corner Banks Grill June 22, 2024. 7:00PM - 10:00PM</p>
+            <br>
+            <div class="catch">What to expect</div><br>
+            <div class="byline">
+                <ul>
+                    <li>An evening filled with creativity and camaraderie</li>
+                    <li>Canvas, paints, brushes and all necessary supplies provided</li>
+                    <li>Refreshments and snacks to fuel your artistic inspiration</li>
+                    <li>Music to set the mood and keep the vibes lively</li>
+                    <li>Guidance from our talented resident artist for those seeking a little extra inspiration</li><br>
+                    <p>Dress comfortably and be prepared to get a little messy!</p>
+                </ul>
+            </div>
+        </div><br>
+
+        <div class="scrollEvent">
+            <div class="cardContainer">
+                <div class="eventImage" onclick="togglePopup()">
+                    <i class="fa-regular fa-circle-play play"></i>
+                </div>
+                <div class="popup" id="popup-1">
+                    <div class="content">
+                        <div class="fixedTop">
+                            <div class="close-button" onclick="togglePopup()">close</div>
+                            <video controls class="video">
+                                <source src="https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/WhatsApp%20Video%202024-03-18%20at%2012.29.59_7bebe9c0.mp4?v=1711408768291" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h4 class="videoTitle">Paint Party</h4>
+                        <p class="details">Date: 3/17/2024</p>
+                    </div>
+                </div>
+            </div>
+            <h2 class="catch">Paint Party</h2>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/e32012e27f.js" crossorigin="anonymous"></script>
-    <script src="./js/diversityarts.js"></script>
+    <script src="../js/diversityarts.js"></script>
 </body>
 </html>
