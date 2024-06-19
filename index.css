@@ -425,10 +425,10 @@ body {
     margin-right: 20px;
     margin-bottom: 50px;
 }
-.flyerCon {
+/* .flyerCon {
     display: flex;
     align-items: end;
-}
+} */
 .flyer {
     width: 100%;
     height: 450px;
@@ -439,16 +439,16 @@ body {
     margin-bottom: 30px;
 }
 .flyerContain {
-    width: 20%;
+    /* width: 20%;
     display: block;
-    margin-left: 100px;
+    margin-left: 100px; */
 }
 .tickets {
     display: flex;
     justify-content: left;
     /* padding: 25px; */
     margin-bottom: 20px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 .ticket {
     background-color: #2C2C2C;
@@ -919,6 +919,13 @@ body {
     }
     .logo {
         width: 150px;
+        margin-left: 0px;
+    }
+    .byline {
+        margin-right: 20px;
+    }
+    .catch {
+        margin-right: 20px;
     }
     .mainlinks {
         width: 100%;
