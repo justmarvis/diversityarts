@@ -40,8 +40,10 @@ body {
     justify-content: start;
     align-items: center;
     text-align: left;
-    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: 100px;
     margin-bottom: 10px;
+    margin-right: 100px;
 }
 .eventCall {
     display: flex;
@@ -94,10 +96,10 @@ body {
     color: #000;
 }
 .logo {
-    width: 500px;
+    width: 150px;
     padding-top: 10px;
     padding-bottom: 10px;
-    /* margin-left: 50px; */
+    margin-left: 100px;
 }
 /* .Logo {
     margin-right: 50px;
@@ -166,7 +168,8 @@ body {
     font-style: normal;
     font-size: 32px;
     margin-bottom: 5px;
-    margin-left: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .byline {
     font-family: "Inter" sans-serif;
@@ -174,8 +177,9 @@ body {
     font-style: normal;
     font-size: 14px;
     margin-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 100px;
     margin-right: 20px;
+    margin-right: 100px;
 }
 .evntDsc {
     font-size: 13px;
@@ -210,7 +214,7 @@ body {
     border: 3px solid rgb(0, 0, 0);
     color: #000;
     padding: 10px 10px;
-    margin-left: 20px;
+    margin-left: 100px;
     margin-bottom: 50px;
 }
 
@@ -283,6 +287,16 @@ body {
     100% {
         width: 100%;
     }
+}
+.e {
+    margin-right: 20px;
+    border: 2px solid #f5f5f5;
+    padding: 10px 20px;
+    margin-right: 100px;
+}
+.eLink {
+    color: #f5f5f5;
+    font-size: 16px;
 }
 .cardContainer {
     margin-bottom: 10px;
@@ -411,12 +425,51 @@ body {
     margin-right: 20px;
     margin-bottom: 50px;
 }
-.eventImage {
+.flyerCon {
+    display: flex;
+    align-items: end;
+}
+.flyer {
     width: 100%;
+    height: 450px;
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/WhatsApp%20Image%202024-06-18%20at%2010.32.19_efe0669b.jpg?v=1718754179273');
+    background-position: center;
+    background-size:contain;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.flyerContain {
+    width: 20%;
+    display: block;
+    margin-left: 100px;
+}
+.tickets {
+    display: flex;
+    justify-content: left;
+    /* padding: 25px; */
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+.ticket {
+    background-color: #2C2C2C;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    height: auto;
+    margin-bottom: 30px;
+}
+.details {
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+.eventImage {
+    width: 500px;
     height: 300px;
     background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/IMG-20240318-WA0002.jpg?v=1710812412888');
     background-size: cover;
     background-position: center;
+    margin-left: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1068,5 +1121,15 @@ body {
     }
     .tickets:active {
         transform: scale(0.8);
+    }
+    .socialLinks {
+        margin-top: 0px;
+    }
+    .catch, .socialLinks, .byline, .Btn {
+        margin-left: 20px;
+    }
+    .eventImage {
+        width: 100%;
+        margin-left: 0px;
     }
 }
