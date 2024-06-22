@@ -1139,4 +1139,8 @@ body {
         width: 100%;
         margin-left: 0px;
     }
+    .serviceArt {
+        padding: 0;
+        margin-left: 20px;
+    }
 }
